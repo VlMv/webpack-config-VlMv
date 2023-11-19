@@ -1,0 +1,12 @@
+{
+   "presets": [
+      [
+         "airbnb",
+         {
+            "debug": true,
+            "useBuiltIns": "usage",
+            "corejs": "3.8"
+         }
+      ]
+   ]
+}

@@ -1,0 +1,67 @@
+{
+   "root": true,
+   "parser": "@babel/eslint-parser",
+   "extends": [
+      "airbnb-base"
+   ],
+   "env": {
+      "browser": true,
+      "node": true
+   },
+   "rules": {
+      "no-multiple-empty-lines": [
+         "warn",
+         {
+            "max": 2
+         }
+      ],
+      "no-return-assign": [
+         "error",
+         "except-parens"
+      ],
+      "import/prefer-default-export": "off",
+      "no-param-reassign": "off",
+      "arrow-parens": [
+         "error",
+         "as-needed"
+      ],
+      "no-unused-expressions": [
+         "error",
+         {
+            "allowTernary": true
+         }
+      ],
+      "comma-dangle": [
+         "error",
+         {
+            "arrays": "only-multiline",
+            "objects": "only-multiline",
+            "imports": "only-multiline",
+            "exports": "only-multiline",
+            "functions": "never"
+         }
+      ],
+      "no-unreachable-loop": [
+         "error",
+         {
+            "ignore": [
+               "ForInStatement",
+               "ForOfStatement"
+            ]
+         }
+      ],
+      "no-restricted-syntax": [
+         "off",
+         {
+            "selector": "ForOfStatement",
+            "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations."
+         }
+      ],
+      "no-plusplus": [
+         "error",
+         {
+            "allowForLoopAfterthoughts": true
+         }
+      ]
+   }
+}
